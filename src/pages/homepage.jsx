@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faTwitter,
 	faGithub,
-	faStackOverflow,
-	faInstagram,
+	faLinkedin,
+    faInstagram,
+    faBluesky
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -95,6 +95,10 @@ const Homepage = () => {
 									{INFO.homepage.title}
 								</div>
 
+                                <div className="title homepage-title">
+									{INFO.homepage.subtitle}
+								</div>
+
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}
 								</div>
@@ -115,19 +119,19 @@ const Homepage = () => {
 
 						<div className="homepage-socials">
 							<a
-								href={INFO.socials.twitter}
+								href={INFO.socials.bluesky}
 								target="_blank"
-								rel="noreferrer"
+								rel="noopener noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faTwitter}
+									icon={faBluesky}
 									className="homepage-social-icon"
 								/>
 							</a>
 							<a
 								href={INFO.socials.github}
 								target="_blank"
-								rel="noreferrer"
+								rel="noopener noreferrer"
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
@@ -135,19 +139,19 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.stackoverflow}
+								href={INFO.socials.linkedin}
 								target="_blank"
-								rel="noreferrer"
+								rel="noopener noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faStackOverflow}
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>
 							<a
 								href={INFO.socials.instagram}
 								target="_blank"
-								rel="noreferrer"
+								rel="noopener noreferrer"
 							>
 								<FontAwesomeIcon
 									icon={faInstagram}
@@ -157,10 +161,10 @@ const Homepage = () => {
 							<a
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
-								rel="noreferrer"
+								rel="noopener noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faMailBulk}
+									icon={faEnvelope}
 									className="homepage-social-icon"
 								/>
 							</a>

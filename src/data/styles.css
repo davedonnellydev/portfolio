@@ -1,14 +1,22 @@
 :root {
 	/* ------- colors ------- */
-	--primary-color: #27272a;
+	--primary-color: #14b8a6;
+	/* --primary-color: #27272a; */
 	--secondary-color: #65656d;
 	--tertiary-color: #acacb4;
 	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
+	--link-color: #DA2C38;
+	/* --link-color: #14b8a6; */
+
+    /* --background-color: #2b3659; */
+    --background-color: #fafafa;
+
+    /* palette at https://coolors.co/da2c38-65656d-acacb4-e4e4e7-14b8a6 */
+
 	/* ---------------------- */
 
 	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
+	--primary-font: "Figtree", sans-serif;
 	--secondary-font: "Roboto", sans-serif;
 	/* --------------------- */
 }
