@@ -14,8 +14,8 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Dave Donnelly,",
-        subtitle: "front end web developer (basically)",
+		title: "Dave Donnelly:",
+        subtitle: "frontend web developer",
 		description:
 			"Ok so look, I'm technically one of those 'career change' developers that only really found his passion for coding at 33.",
 	},
@@ -76,6 +76,43 @@ const INFO = {
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
 			linkText: "View Project",
 			link: "https://github.com",
+		},
+	],
+    scrimba: [
+		{
+			title: "Business Card",
+			description:
+				"An online business card - created as part of the Scrimba Frontend Developer Career Path",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png",
+			linkText: "Github - Business Card",
+			link: "https://github.com/davedonnellydev/business-card",
+		},
+
+		{
+			title: "Coffee counter",
+			description:
+				"A simple counter to track your daily coffee intake - a project created as part of the Scrimba Frontend Developer Career Path",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "Github - Coffee counter",
+			link: "https://github.com/davedonnellydev/coffee-counter",
+		},
+
+		{
+			title: "Game scoreboard",
+			description:
+				"A simple game scoreboard - a project created as part of the Scrimba Frontend Developer Career Path",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "Github - Game Scoreboard",
+			link: "https://github.com/davedonnellydev/scoreboard",
+		},
+
+		{
+			title: "Password Generator",
+			description:
+				"A password generator - a project created as part of the Scrimba Frontend Developer Career Path",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "Github - Password Generator",
+			link: "https://github.com/davedonnellydev/password-generator",
 		},
 	],
 };

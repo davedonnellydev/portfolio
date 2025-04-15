@@ -4,14 +4,14 @@ import { Helmet } from "react-helmet";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
-import AllProjects from "../components/projects/allProjects";
+import AllScrimba from "../components/projects/allScrimba";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/projects.css";
 
-const Projects = () => {
+const Scrimba = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -21,7 +21,7 @@ const Projects = () => {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Projects | ${INFO.main.title}`}</title>
+				<title>{`Scrimba Projects | ${INFO.main.title}`}</title>
 				<meta name="description" content={currentSEO.description} />
 				<meta
 					name="keywords"
@@ -37,20 +37,18 @@ const Projects = () => {
 							<Logo width={46} />
 						</div>
 					</div>
+                    <div><a href="/projects">Back to projects</a></div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							I made dis
+							Scrimba Frontend Developer Career Path
 						</div>
 
 						<div className="subtitle projects-subtitle">
-                             <p>
-							[blurb about projects in general]
-                            </p>
-                            <a href="/scrimba">link to Scrimba projects</a>
+							[blurb about working through the scrimba course here]
 						</div>
 
 						<div className="projects-list">
-							<AllProjects />
+							<AllScrimba />
 						</div>
 					</div>
 					<div className="page-footer">
@@ -62,4 +60,4 @@ const Projects = () => {
 	);
 };
 
-export default Projects;
+export default Scrimba;

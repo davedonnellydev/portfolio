@@ -8,7 +8,7 @@ import "./styles/allProjects.css";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 
-const PROJECTS = {
+const SCRIMBA = {
     projects: []
 }
 
@@ -26,7 +26,7 @@ async function getRepoList() {
       })
 
     for (let i = 0; i < apiList.data.length; i++) {
-        if(apiList.data[i].topics.includes("portfolio-project")) {
+        if(apiList.data[i].topics.includes("scrimba")) {
             const repo = {
                 "title": apiList.data[i].name,
                 "description": apiList.data[i].description,
@@ -34,17 +34,17 @@ async function getRepoList() {
                 "linkText": "Go to Github repo",
                 "link": apiList.data[i].svn_url
             }
-            PROJECTS.projects.push(repo)
+            SCRIMBA.projects.push(repo)
         }
     }
 }
 
 getRepoList();
 
-const AllProjects = () => {
+const AllScrimba = () => {
 	return (
 		<div className="all-projects-container">
-			{PROJECTS.projects.map((project, index) => (
+			{SCRIMBA.projects.map((project, index) => (
 				<div className="all-projects-project" key={index}>
 					<Project
 						logo={project.logo}
@@ -59,4 +59,4 @@ const AllProjects = () => {
 	);
 };
 
-export default AllProjects;
+export default AllScrimba;
