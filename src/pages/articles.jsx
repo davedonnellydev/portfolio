@@ -19,6 +19,10 @@ const Articles = () => {
 
 	const currentSEO = SEO.find((item) => item.page === "articles");
 
+    const today = new Date();
+
+    const visibleArticles = myArticles.filter(article => article().date <= today);
+
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -40,30 +44,44 @@ const Articles = () => {
 					</div>
 
 					<div className="articles-main-container">
-						<div className="title articles-title">
-							{INFO.articles.title}
-						</div>
+						<div className="title articles-title">Blog</div>
 
 						<div className="subtitle articles-subtitle">
-							{INFO.articles.description}
+							<p>
+								This is where I share things I've learned,
+								challenges I've tackled, and tips I'd give my
+								past self. Some posts are quick dev notes,
+								others dive into projects or frontend concepts
+								I've been exploring. If you're curious about how
+								I work or think through problems, this is a good
+								place to start.
+							</p>
 						</div>
 
 						<div className="articles-container">
 							<div className="articles-wrapper">
-								{myArticles.map((article, index) => (
-									<div
-										className="articles-article"
-										key={(index + 1).toString()}
-									>
-										<Article
+								{visibleArticles.map((article, index) =>
+                                    <div
+											className="articles-article"
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
+										>
+											<Article
+												key={(index + 1).toString()}
+												date={article().date.toLocaleDateString(
+													"en-AU",
+													{
+														year: "numeric",
+														month: "long",
+														day: "numeric",
+													}
+												)}
+												title={article().title}
+												description={
+													article().description
+												}
+												link={"/article/" + (index + 1)}
+											/>
+										</div>)}
 							</div>
 						</div>
 					</div>

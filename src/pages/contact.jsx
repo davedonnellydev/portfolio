@@ -39,12 +39,19 @@ const Contact = () => {
 					</div>
 
 					<div className="contact-container">
-						<div className="title contact-title">
-							Say hi
-						</div>
+						<div className="title contact-title">Say hi</div>
 
 						<div className="subtitle contact-subtitle">
-                        Feel free to email me at <a href={`mailto:${INFO.main.email}`}>{INFO.main.email}</a>. You can also connect with me on my socials using the links below.
+							<p>
+								Keen to chat? Whether you've got a role in mind,
+								want to collaborate, or just want to connect,
+								feel free to reach out. You can email me at{" "}
+								<a href={`mailto:${INFO.main.email}`}>
+									{INFO.main.email}
+								</a>{" "}
+								or get in touch via LinkedIn. Always happy to
+								chat — especially if there's coffee involved.
+							</p>
 						</div>
 					</div>
 

@@ -92,15 +92,15 @@ const Homepage = () => {
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<div className="title homepage-title">
-									{INFO.homepage.title}
+									<span>Dave Donnelly:</span>
 								</div>
 
                                 <div className="title homepage-title">
-									{INFO.homepage.subtitle}
+                                    <span>frontend web developer</span>
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
+                                    <span>Hey, I'm Dave — a frontend web developer based in Sydney. After years working in university project and systems teams, I've made the switch to building things on the web. I like clean code, intuitive design, and solving real problems with smart, simple solutions.</span>
 								</div>
 							</div>
 

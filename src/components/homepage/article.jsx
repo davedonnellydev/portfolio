@@ -8,7 +8,6 @@ import "./styles/article.css";
 
 const Article = (props) => {
 	const { title, description, date, link } = props;
-
 	return (
 		<React.Fragment>
 			<div className="homepage-article">

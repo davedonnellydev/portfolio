@@ -37,14 +37,14 @@ const Scrimba = () => {
 							<Logo width={46} />
 						</div>
 					</div>
-                    <div><a href="/projects">Back to projects</a></div>
 					<div className="projects-container">
 						<div className="title projects-title">
 							Scrimba Frontend Developer Career Path
 						</div>
 
 						<div className="subtitle projects-subtitle">
-							[blurb about working through the scrimba course here]
+							<p>[blurb about working through the scrimba course here]</p>
+                            <a href="/projects">link to Scrimba projects</a>
 						</div>
 
 						<div className="projects-list">

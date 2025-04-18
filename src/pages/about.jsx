@@ -42,11 +42,13 @@ const About = () => {
 						<div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title">
-									{INFO.about.title}
+									About
 								</div>
 
 								<div className="subtitle about-subtitle">
-									{INFO.about.description}
+                                <p>Hi! I'm Dave, a frontend developer who didn't take the usual route into tech. For over 15 years, I worked in higher ed — managing systems, working across teams, and helping major projects come to life. I've led rollouts, worked with vendors, wrangled messy data, and made sure the tech side actually worked for the people using it.</p>
+                                <p>But over time, I found myself more and more drawn to coding — so I retrained through General Assembly and got stuck into HTML, CSS, JavaScript, React, and Git. Now I'm focused on building clean, accessible web apps that are easy to use and maintain. I enjoy figuring things out, improving workflows, and building interfaces that feel intuitive from the first click.</p>
+                                <p>I bring solid problem-solving skills, a collaborative mindset, and years of experience translating business needs into working systems. Outside of coding, you'll find me at the theatre, planning my next trip, or enjoying a glass of wine on the couch with my husband, Tyson and 3 year old spoodle, Alfie.</p>
 								</div>
 							</div>
 

@@ -39,12 +39,12 @@ const Projects = () => {
 					</div>
 					<div className="projects-container">
 						<div className="title projects-title">
-							I made dis
+							Projects
 						</div>
 
 						<div className="subtitle projects-subtitle">
                              <p>
-							[blurb about projects in general]
+                             Here's a look at some of the things I've been building lately. These projects show where I'm at with my frontend skills — from interactive apps and small tools to full websites. I've included a mix of personal projects and code challenges, with a few in-progress bits too. Each one chosen to show how I think, how I code, and what I've been learning - and each one taught me something new. More in the works!
                             </p>
                             <a href="/scrimba">link to Scrimba projects</a>
 						</div>
