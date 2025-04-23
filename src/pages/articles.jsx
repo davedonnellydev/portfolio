@@ -21,7 +21,7 @@ const Articles = () => {
 
     const today = new Date();
 
-    const visibleArticles = myArticles.filter(article => article().date <= today);
+    const visibleArticles = myArticles.filter(article => article().date <= today && article().published === true).reverse();
 
 	return (
 		<React.Fragment>
@@ -60,13 +60,13 @@ const Articles = () => {
 
 						<div className="articles-container">
 							<div className="articles-wrapper">
-								{visibleArticles.map((article, index) =>
+								{visibleArticles.map((article, key) =>
                                     <div
 											className="articles-article"
-											key={(index + 1).toString()}
+											key={key}
 										>
 											<Article
-												key={(index + 1).toString()}
+												key={article().articleNumber.toString()}
 												date={article().date.toLocaleDateString(
 													"en-AU",
 													{
@@ -79,7 +79,7 @@ const Articles = () => {
 												description={
 													article().description
 												}
-												link={"/article/" + (index + 1)}
+												link={"/article/" + article().articleNumber}
 											/>
 										</div>)}
 							</div>

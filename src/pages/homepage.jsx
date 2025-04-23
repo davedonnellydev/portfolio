@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
 	faLinkedin,
-    faInstagram,
-    faBluesky
+	faInstagram,
+	faBluesky,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
@@ -68,6 +68,29 @@ const Homepage = () => {
 		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
 	};
 
+	const today = new Date();
+	const twoWeeksAgo = new Date();
+	twoWeeksAgo.setDate(today.getDate() - 14);
+
+	const recentPublishedArticles = myArticles
+		.filter(
+			(article) =>
+				article().date <= today &&
+				article().date > twoWeeksAgo &&
+				article().published === true
+		)
+		.reverse();
+
+	const allPublishedArticles = myArticles
+		.filter(
+			(article) => article().date <= today && article().published === true
+		)
+		.reverse();
+
+	if (recentPublishedArticles.length === 0) {
+		recentPublishedArticles.push(allPublishedArticles[0]);
+	}
+
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -95,12 +118,23 @@ const Homepage = () => {
 									<span>Dave Donnelly:</span>
 								</div>
 
-                                <div className="title homepage-title">
-                                    <span>frontend web developer</span>
+								<div className="title homepage-title">
+									<span>frontend web developer</span>
 								</div>
 
 								<div className="subtitle homepage-subtitle">
-                                    <span>Hey, I'm Dave — a frontend web developer based in Sydney. After years working in university project and systems teams, I've made the switch to building things on the web. I like clean code, intuitive design, and solving real problems with smart, simple solutions.</span>
+									<span>
+										Hey, I'm Dave — a frontend web developer
+										based in Sydney. After years working in
+										the university sector, mainly in systems
+										and project teams, I've made the switch
+										to building things on the web. When I
+										grow up, I want to be the kind of dev
+										that writes clean code, designs
+										intuitive apps, and solves real problems
+										with smart, simple solutions. Connect
+										with me below!
+									</span>
 								</div>
 							</div>
 
@@ -122,6 +156,7 @@ const Homepage = () => {
 								href={INFO.socials.bluesky}
 								target="_blank"
 								rel="noopener noreferrer"
+								title="Bluesky"
 							>
 								<FontAwesomeIcon
 									icon={faBluesky}
@@ -132,6 +167,7 @@ const Homepage = () => {
 								href={INFO.socials.github}
 								target="_blank"
 								rel="noopener noreferrer"
+								title="GitHub"
 							>
 								<FontAwesomeIcon
 									icon={faGithub}
@@ -142,6 +178,7 @@ const Homepage = () => {
 								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noopener noreferrer"
+								title="LinkedIn"
 							>
 								<FontAwesomeIcon
 									icon={faLinkedin}
@@ -152,6 +189,7 @@ const Homepage = () => {
 								href={INFO.socials.instagram}
 								target="_blank"
 								rel="noopener noreferrer"
+								title="Instagram"
 							>
 								<FontAwesomeIcon
 									icon={faInstagram}
@@ -162,6 +200,7 @@ const Homepage = () => {
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
 								rel="noopener noreferrer"
+								title="Email"
 							>
 								<FontAwesomeIcon
 									icon={faEnvelope}
@@ -176,20 +215,30 @@ const Homepage = () => {
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
+								{recentPublishedArticles.map((article, key) => (
+									<div className="homepage-article" key={key}>
 										<Article
-											key={(index + 1).toString()}
-											date={article().date}
+											key={article().articleNumber.toString()}
+											date={article().date.toLocaleDateString(
+												"en-AU",
+												{
+													year: "numeric",
+													month: "long",
+													day: "numeric",
+												}
+											)}
 											title={article().title}
 											description={article().description}
-											link={"/article/" + (index + 1)}
+											link={
+												"/article/" +
+												article().articleNumber
+											}
 										/>
 									</div>
 								))}
+								<div className="all-articles-link homepage-article-link">
+									<a href="/articles">More articles...</a>
+								</div>
 							</div>
 
 							<div className="homepage-works">

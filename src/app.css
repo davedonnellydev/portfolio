@@ -56,13 +56,22 @@
 	width: 70%;
 }
 
+.secondary-title {
+	color: var(--tertiary-color);
+	font-family: var(--secondary-font);
+	font-size: 36px;
+	font-weight: 700;
+	width: 70%;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
 .subtitle {
 	padding-top: 10px;
 	color: var(--secondary-color);
 	font-size: 16px;
 	line-height: 28px;
 	width: 70%;
-	margin-top: 25px;
 }
 
 .page-footer {

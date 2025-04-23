@@ -93,6 +93,18 @@
 	padding-top: 30px;
 }
 
+.all-articles-link {
+    padding: 30px;
+}
+
+.all-articles-link a {
+    opacity: 0.7;
+}
+
+.all-articles-link a:hover {
+    opacity: 1;
+}
+
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;

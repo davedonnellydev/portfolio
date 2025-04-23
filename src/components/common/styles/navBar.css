@@ -17,7 +17,7 @@
 }
 
 .nav-background {
-	width: 380px;
+	width: 420px;
 	height: 40px;
 	padding-left: 0%;
 	padding-right: 0%;
@@ -53,6 +53,10 @@
 .nav-item a:hover {
 	color: var(--link-color);
 	transition: color 0.3s ease-in-out;
+}
+
+.download-icon {
+    font-size: 100%;
 }
 
 @media (max-width: 600px) {

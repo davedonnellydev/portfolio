@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./styles/navBar.css";
 
@@ -46,7 +48,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<Link to="/articles">Articles</Link>
+								<Link to="/articles">Blog</Link>
 							</li>
 							<li
 								className={
@@ -56,6 +58,21 @@ const NavBar = (props) => {
 								}
 							>
 								<Link to="/contact">Contact</Link>
+							</li>
+                            <li
+								className="download-icon nav-item"
+							>
+                            <a
+                                href="DDONNELLY CV 2025.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Download CV"
+                                download
+                            >
+                                <FontAwesomeIcon
+                                    icon={faFileArrowDown}
+                                />
+                            </a>
 							</li>
 						</ul>
 					</div>
