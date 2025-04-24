@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faGithub,
 	faLinkedin,
-	faInstagram,
+	// faInstagram,
 	faBluesky,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -128,8 +128,7 @@ const Homepage = () => {
 										based in Sydney. After years working in
 										the university sector, mainly in systems
 										and project teams, I've made the switch
-										to building things on the web. When I
-										grow up, I want to be the kind of dev
+										to building things on the web. I aspire to be the kind of dev
 										that writes clean code, designs
 										intuitive apps, and solves real problems
 										with smart, simple solutions. Connect
@@ -151,65 +150,8 @@ const Homepage = () => {
 							</div>
 						</div>
 
-						<div className="homepage-socials">
-							<a
-								href={INFO.socials.bluesky}
-								target="_blank"
-								rel="noopener noreferrer"
-								title="Bluesky"
-							>
-								<FontAwesomeIcon
-									icon={faBluesky}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.github}
-								target="_blank"
-								rel="noopener noreferrer"
-								title="GitHub"
-							>
-								<FontAwesomeIcon
-									icon={faGithub}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.linkedin}
-								target="_blank"
-								rel="noopener noreferrer"
-								title="LinkedIn"
-							>
-								<FontAwesomeIcon
-									icon={faLinkedin}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noopener noreferrer"
-								title="Instagram"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={`mailto:${INFO.main.email}`}
-								target="_blank"
-								rel="noopener noreferrer"
-								title="Email"
-							>
-								<FontAwesomeIcon
-									icon={faEnvelope}
-									className="homepage-social-icon"
-								/>
-							</a>
-						</div>
-
 						<div className="homepage-projects">
+                            <h2 className="secondary-title">Recent projects</h2>
 							<AllProjects />
 						</div>
 
@@ -244,8 +186,65 @@ const Homepage = () => {
 							<div className="homepage-works">
 								<Works />
 							</div>
-						</div>
 
+						</div>
+                        <div className="homepage-socials">
+							<a
+								href={INFO.socials.bluesky}
+								target="_blank"
+								rel="noopener noreferrer"
+								title="Bluesky"
+							>
+								<FontAwesomeIcon
+									icon={faBluesky}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.github}
+								target="_blank"
+								rel="noopener noreferrer"
+								title="GitHub"
+							>
+								<FontAwesomeIcon
+									icon={faGithub}
+									className="homepage-social-icon"
+								/>
+							</a>
+							<a
+								href={INFO.socials.linkedin}
+								target="_blank"
+								rel="noopener noreferrer"
+								title="LinkedIn"
+							>
+								<FontAwesomeIcon
+									icon={faLinkedin}
+									className="homepage-social-icon"
+								/>
+							</a>
+							{/* <a
+								href={INFO.socials.instagram}
+								target="_blank"
+								rel="noopener noreferrer"
+								title="Instagram"
+							>
+								<FontAwesomeIcon
+									icon={faInstagram}
+									className="homepage-social-icon"
+								/>
+							</a> */}
+							<a
+								href={`mailto:${INFO.main.email}`}
+								target="_blank"
+								rel="noopener noreferrer"
+								title="Email"
+							>
+								<FontAwesomeIcon
+									icon={faEnvelope}
+									className="homepage-social-icon"
+								/>
+							</a>
+						</div>
 						<div className="page-footer">
 							<Footer />
 						</div>

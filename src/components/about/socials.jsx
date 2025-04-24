@@ -4,7 +4,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
 	faGithub,
 	faLinkedin,
-    faInstagram,
+    // faInstagram,
     faBluesky
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -55,7 +55,7 @@ const Socials = () => {
 				</a>
 			</div>
 
-			<div className="social">
+			{/* <div className="social">
 				<a
 					href={INFO.socials.instagram}
 					target="_blank"
@@ -69,7 +69,7 @@ const Socials = () => {
 					</div>
 					<div className="social-text">Instagram</div>
 				</a>
-			</div>
+			</div> */}
 
 			<div className="email">
 				<div className="email-wrapper">
