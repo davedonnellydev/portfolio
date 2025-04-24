@@ -186,7 +186,6 @@ const Homepage = () => {
 							<div className="homepage-works">
 								<Works />
 							</div>
-
 						</div>
                         <div className="homepage-socials">
 							<a
@@ -245,6 +244,8 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
+
+
 						<div className="page-footer">
 							<Footer />
 						</div>

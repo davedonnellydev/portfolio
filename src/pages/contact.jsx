@@ -39,7 +39,7 @@ const Contact = () => {
 					</div>
 
 					<div className="contact-container">
-						<div className="title contact-title">Say hi</div>
+						<div className="title contact-title">Contact</div>
 
 						<div className="subtitle contact-subtitle">
 							<p>

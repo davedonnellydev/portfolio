@@ -12,7 +12,6 @@ const NavBar = (props) => {
 		<React.Fragment>
 			<div className="nav-container">
 				<nav className="navbar">
-					<div className="nav-background">
 						<ul className="nav-list">
 							<li
 								className={
@@ -68,14 +67,13 @@ const NavBar = (props) => {
                                 rel="noopener noreferrer"
                                 title="Download CV"
                                 download
-                            >
+                            >Download CV {" "}
                                 <FontAwesomeIcon
                                     icon={faFileArrowDown}
                                 />
                             </a>
 							</li>
 						</ul>
-					</div>
 				</nav>
 			</div>
 		</React.Fragment>

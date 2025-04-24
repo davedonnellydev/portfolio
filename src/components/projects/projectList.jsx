@@ -8,6 +8,99 @@ import Project from "./project";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 
+const languages = [
+    {
+      language: "c",
+      properName: "C",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png"
+    },
+    {
+      language: "cpp",
+      properName: "C++",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/cpp/cpp.png"
+    },
+    {
+      language: "csharp",
+      properName: "C#",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/csharp/csharp.png"
+    },
+    {
+      language: "css",
+      properName: "CSS",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/css/css.png"
+    },
+    {
+      language: "go-old",
+      properName: "Go (Old)",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/go-old/go-old.png"
+    },
+    {
+      language: "go",
+      properName: "Go",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/go/go.png"
+    },
+    {
+      language: "haskell",
+      properName: "Haskell",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/haskell/haskell.png"
+    },
+    {
+      language: "html",
+      properName: "HTML",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"
+    },
+    {
+      language: "java",
+      properName: "Java",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png"
+    },
+    {
+      language: "javascript",
+      properName: "JavaScript",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
+    },
+    {
+      language: "kotlin",
+      properName: "Kotlin",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/kotlin/kotlin.png"
+    },
+    {
+      language: "lua",
+      properName: "Lua",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/lua/lua.png"
+    },
+    {
+      language: "php",
+      properName: "PHP",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/php/php.png"
+    },
+    {
+      language: "python",
+      properName: "Python",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png"
+    },
+    {
+      language: "r",
+      properName: "R",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/r/r.png"
+    },
+    {
+      language: "ruby",
+      properName: "Ruby",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/ruby/ruby.png"
+    },
+    {
+      language: "swift",
+      properName: "Swift",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/swift/swift.png"
+    },
+    {
+      language: "typescript",
+      properName: "TypeScript",
+      url: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/typescript/typescript.png"
+    }
+  ];
+
 const ProjectList = ({ topic }) => {
 	const [projects, setProjects] = useState([]);
 	const [isLoading, setIsLoading] = useState(false);
@@ -45,6 +138,8 @@ const ProjectList = ({ topic }) => {
 					}
 				);
 
+				console.log(githubData);
+
 				for (let i = 0; i < githubData.data.length; i++) {
 					if (githubData.data[i].topics.includes(topic)) {
 						let firstHeading = null;
@@ -70,12 +165,17 @@ const ProjectList = ({ topic }) => {
 							firstHeading = null;
 						}
 
+                        let languageURL
+
+                        const languageMatch = languages.find((language) => language.properName === githubData.data[i].language)
+						languageMatch ? languageURL = languageMatch.url : languageURL = null;
+
 						const repo = {
 							title: firstHeading
 								? firstHeading.text
 								: githubData.data[i].name,
 							description: githubData.data[i].description,
-							logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+							logo: languageURL ? languageURL : "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
 							linkText: "Go to Github repo",
 							link: githubData.data[i].html_url,
 						};
