@@ -39,9 +39,9 @@
 }
 
 @media (max-width: 600px) {
-	.projects-container {
+	/* .projects-container {
 		padding-top: 60px;
-	}
+	} */
 
 	.projects-project {
 		width: calc(100% / 2);

@@ -11,8 +11,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    width: 60%;
-    /* max-width: 600px; */
+    width: 100%;
+    max-width: 600px;
     margin: 0 auto;
 
 	position: fixed;
@@ -69,7 +69,8 @@
 
 	.nav-list {
 		width: 80%;
-		height: 40px;
+		/* height: 40px; */
+        flex-wrap: wrap;
 	}
 
 	.nav-item {
