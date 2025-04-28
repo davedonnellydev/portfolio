@@ -141,7 +141,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="homepage.jpg"
+											src="dave-homepage.png"
 											alt="about"
 											className="homepage-image"
 										/>
@@ -151,8 +151,11 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-                            <h2 className="secondary-title">Recent projects</h2>
+                            <h2 className="secondary-title">Personal projects</h2>
 							<AllProjects />
+                            <div className="all-projects-link homepage-article-link">
+									<a href="/projects">More projects...</a>
+								</div>
 						</div>
 
 						<div className="homepage-after-title">

@@ -94,15 +94,19 @@
 	padding-top: 30px;
 }
 
+.all-projects-link {
+    margin-bottom: 30px;
+}
+
 .all-articles-link {
     padding: 30px;
 }
 
-.all-articles-link a {
+.all-articles-link a, .all-projects-link a {
     opacity: 0.7;
 }
 
-.all-articles-link a:hover {
+.all-articles-link a:hover, .all-projects-link a:hover {
     opacity: 1;
 }
 

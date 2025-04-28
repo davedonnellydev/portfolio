@@ -58,7 +58,7 @@ const Projects = () => {
 								More in the works!
 							</p>
 							<p>
-								<a href="#recent-projects">Recent Projects</a>
+								<a href="#personal-projects">Personal Projects</a>
 							</p>
 							<p>
 								<a href="#general-assembly-projects">
@@ -72,8 +72,8 @@ const Projects = () => {
 								</a>
 							</p>
 						</div>
-						<div className="projects-section" id="recent-projects">
-							<h2 className="secondary-title">Recent projects</h2>
+						<div className="projects-section" id="personal-projects">
+							<h2 className="secondary-title">Personal projects</h2>
 							<div className="projects-list">
 								<AllProjects />
 							</div>
