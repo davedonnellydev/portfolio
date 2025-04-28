@@ -78,7 +78,46 @@ const Projects = () => {
 								<AllProjects />
 							</div>
 						</div>
-						<div
+						<div className="projects-section" id="scrimba-projects">
+							<h2 className="secondary-title">
+								Scrimba's Frontend Developer Career Path
+							</h2>
+							<p className="subtitle projects-subtitle">
+								<a
+									href="https://scrimba.com/frontend-path-c0j"
+									target="_blank"
+									rel="noreferrer"
+								>
+									https://scrimba.com/frontend-path-c0j
+								</a>
+								<br />
+								It's been a couple of years since I completed
+								the GA Software Engineering Immersive, so I
+								wanted a structured way to refresh my frontend
+								skills and make sure I was up to date with the
+								latest practices. That's what led me to the
+								Frontend Developer Career Path at Scrimba. It's
+								a super practical, project-based course that's
+								been great for reinforcing my knowledge of HTML,
+								CSS, JavaScript, and React. The projects below
+								were built as part of the course, and it's been
+								a really useful way to rebuild muscle memory and
+								sharpen my skills while balancing a full-time
+								job.
+								<br />
+								<a href="#top">
+									Top{" "}
+									<FontAwesomeIcon
+										style={{ fontSize: "10px" }}
+										icon={faChevronUp}
+									/>
+								</a>
+							</p>
+							<div className="projects-list">
+								<AllScrimba />
+							</div>
+						</div>
+                        <div
 							className="projects-section"
 							id="general-assembly-projects"
 						>
@@ -128,45 +167,6 @@ const Projects = () => {
 							</p>
 							<div className="projects-list">
 								<AllGeneralAssembly />
-							</div>
-						</div>
-						<div className="projects-section" id="scrimba-projects">
-							<h2 className="secondary-title">
-								Scrimba's Frontend Developer Career Path
-							</h2>
-							<p className="subtitle projects-subtitle">
-								<a
-									href="https://scrimba.com/frontend-path-c0j"
-									target="_blank"
-									rel="noreferrer"
-								>
-									https://scrimba.com/frontend-path-c0j
-								</a>
-								<br />
-								It's been a couple of years since I completed
-								the GA Software Engineering Immersive, so I
-								wanted a structured way to refresh my frontend
-								skills and make sure I was up to date with the
-								latest practices. That's what led me to the
-								Frontend Developer Career Path at Scrimba. It's
-								a super practical, project-based course that's
-								been great for reinforcing my knowledge of HTML,
-								CSS, JavaScript, and React. The projects below
-								were built as part of the course, and it's been
-								a really useful way to rebuild muscle memory and
-								sharpen my skills while balancing a full-time
-								job.
-								<br />
-								<a href="#top">
-									Top{" "}
-									<FontAwesomeIcon
-										style={{ fontSize: "10px" }}
-										icon={faChevronUp}
-									/>
-								</a>
-							</p>
-							<div className="projects-list">
-								<AllScrimba />
 							</div>
 						</div>
 					</div>
