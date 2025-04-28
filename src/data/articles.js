@@ -439,7 +439,7 @@ function article_4() {
 	return {
 		date: new Date("2025-05-04"),
 		title: "Getting comfortable with CSS (eventually)",
-		published: false,
+		published: true,
         articleNumber: 4,
 		description:
 			"Of all the parts of frontend development, CSS has taken me the longest to feel confident in. Here's what made it so tricky — and how slow, steady practice helped it start to make sense.",

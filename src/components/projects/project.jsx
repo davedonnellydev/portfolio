@@ -6,7 +6,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "./styles/project.css";
 
 const Project = (props) => {
-	const { logo, title, description, linkText, link } = props;
+	const { logo, title, description, linkText, link, createdDate, updatedDate } = props;
 
 	return (
 		<React.Fragment>
@@ -17,6 +17,22 @@ const Project = (props) => {
 							<img src={logo} alt="logo" />
 						</div>
 						<div className="project-title">{title}</div>
+						<div className="project-date">{`Created: ${createdDate.toLocaleDateString(
+							"en-AU",
+							{
+								year: "numeric",
+								month: "long",
+								day: "numeric",
+							}
+						)}`}</div>
+						<div className="project-date">{`Updated: ${updatedDate.toLocaleDateString(
+							"en-AU",
+							{
+								year: "numeric",
+								month: "long",
+								day: "numeric",
+							}
+						)}`}</div>
 						<div className="project-description">{description}</div>
 						<div className="project-link">
 							<div className="project-link-icon">

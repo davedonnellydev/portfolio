@@ -178,8 +178,8 @@ const ProjectList = ({ topic }) => {
 							logo: languageURL ? languageURL : "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
 							linkText: "Go to Github repo",
 							link: githubData.data[i].html_url,
-                            createdDate: githubData.data[i].created_at,
-                            updatedDate: githubData.data[i].updated_at
+                            createdDate: new Date(githubData.data[i].created_at),
+                            updatedDate: new Date(githubData.data[i].updated_at)
 
 						};
 						arrayOfProjects.push(repo);
@@ -217,6 +217,8 @@ const ProjectList = ({ topic }) => {
 							<Project
 								logo={project.logo}
 								title={project.title}
+                                updatedDate={project.updatedDate}
+                                createdDate={project.createdDate}
 								description={project.description}
 								linkText={project.linkText}
 								link={project.link}
