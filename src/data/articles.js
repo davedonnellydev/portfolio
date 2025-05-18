@@ -59,7 +59,7 @@ function article_1() {
 		date: new Date("2025-03-23"),
 		title: "Hesitating? Or waiting for the right moment?",
 		published: true,
-        articleNumber: 1,
+		articleNumber: 1,
 		description:
 			"My path into frontend development hasn't been linear — and that's okay. I write a bit about why I didn't switch careers right after studying, and what I gained by waiting until I felt the time was right.",
 		keywords: [
@@ -80,7 +80,9 @@ function article_1() {
 			<React.Fragment>
 				<div className="article-content">
 					<p>
-						After finishing the General Assembly Software Engineering Intensive in 2022, I didn't jump into a dev job straight away. I felt a lot of pressure to — but
+						After finishing the General Assembly Software
+						Engineering Intensive in 2022, I didn't jump into a dev
+						job straight away. I felt a lot of pressure to — but
 						honestly looking back now, I'm glad I didn't.
 					</p>
 					<p>
@@ -98,12 +100,14 @@ function article_1() {
 						a problem, I was working in a school office at UNSW
 						around 10 years ago. We had an increasing amount of
 						internship applications to process but no official
-						system to manage them. We needed something that could bulk manage applications, something customisable, but the team who would usually work with
-						us to build a solution were already overworked and unable to help. Our office had a
-						licence for FileMaker Pro, so I decided I'd try my hand
-						at using FileMaker to build a database to collect &
-						process applications, and confirm outcomes for our
-						students' internships.
+						system to manage them. We needed something that could
+						bulk manage applications, something customisable, but
+						the team who would usually work with us to build a
+						solution were already overworked and unable to help. Our
+						office had a licence for FileMaker Pro, so I decided I'd
+						try my hand at using FileMaker to build a database to
+						collect & process applications, and confirm outcomes for
+						our students' internships.
 					</p>
 					<p>
 						I spent weeks learning how to use the system in my spare
@@ -112,10 +116,11 @@ function article_1() {
 						set up automated email templates in an effort to make it
 						quick, easy to use and standardised. I eventually put
 						together something that, looking back, was admittedly a
-						bit janky on the inside, but was still useful & solved our
-						problem at the time. At this point though, it was still
-						not something I thought I could make a career out of - I
-						was just trying to make things easier for my workmates.
+						bit janky on the inside, but was still useful & solved
+						our problem at the time. At this point though, it was
+						still not something I thought I could make a career out
+						of - I was just trying to make things easier for my
+						workmates.
 					</p>
 					<p>
 						<b>The spark</b>
@@ -123,23 +128,23 @@ function article_1() {
 						Fast forward to my time at City, University of London
 						where I was a course administator & looking for a role
 						change. A role in the student systems team came up and
-						my manager recommended that I go for it.
-						Despite not having a background in systems at the time,
-						by some miracle my application was successful.
+						my manager recommended that I go for it. Despite not
+						having a background in systems at the time, by some
+						miracle my application was successful.
 					</p>
 					<p>
 						I started slow, picking up small bits of development —
 						tweaking code, writing SQL, improving how we presented
 						data to end users. The student information system we
-						used (SITS:Vision, by Tribal) had a purpose-built programming language for
-						custom-building frontend pages/applications to help
-						manage the backend records. While it wasn't always
-						directly using HTML/CSS/JavaScript, I remember getting
-						hooked on that feeling of making something work better
-						through code. And to my surprise, I picked it up fast.
-						For the first time in my working life I felt like I'd
-						found something I loved to do, that I could actually do
-						well.
+						used (SITS:Vision, by Tribal) had a purpose-built
+						programming language for custom-building frontend
+						pages/applications to help manage the backend records.
+						While it wasn't always directly using
+						HTML/CSS/JavaScript, I remember getting hooked on that
+						feeling of making something work better through code.
+						And to my surprise, I picked it up fast. For the first
+						time in my working life I felt like I'd found something
+						I loved to do, that I could actually do well.
 					</p>
 					<p>
 						<b>Diving deeper</b>
@@ -147,18 +152,18 @@ function article_1() {
 						When we moved back to Sydney in 2021, I knew I wanted to
 						keep exploring that interest. I found the General
 						Assembly Software Engineering Intensive and dove in
-						headfirst. 20 hours of study per week (more during project weeks) on top of full
-						time work was definitely a struggle but my heart sang
-						during every moment of it! It confirmed for me that this
-						wasn't just a curiosity — it was something I genuinely
-						wanted to do long-term.
+						headfirst. 20 hours of study per week (more during
+						project weeks) on top of full time work was definitely a
+						struggle but my heart sang during every moment of it! It
+						confirmed for me that this wasn't just a curiosity — it
+						was something I genuinely wanted to do long-term.
 					</p>
 					<p>
 						At the end of the six months, I finished the course but
-						I didn't leave my UNSW job straight away. I could give many
-						reasons which, despite being legitimate sometimes feel like
-						excuses, but ultimately I think it just came down to
-						timing.
+						I didn't leave my UNSW job straight away. I could give
+						many reasons which, despite being legitimate sometimes
+						feel like excuses, but ultimately I think it just came
+						down to timing.
 					</p>
 					<p>
 						We were mid-way through a major student-facing system
@@ -178,7 +183,8 @@ function article_1() {
 					<p>
 						<b>Why now</b>
 						<br />
-						With the rollout nearly complete and my team shifting into BAU, it finally feels like the right time to make
+						With the rollout nearly complete and my team shifting
+						into BAU, it finally feels like the right time to make
 						the leap. I've built up my frontend skills, I'm
 						continually working on my portfolio of projects, and I'm
 						ready to bring both my coding abilities and my years of
@@ -201,7 +207,7 @@ function article_2() {
 		date: new Date("2025-04-06"),
 		title: "A web dev trapped in a business consultant's body",
 		published: true,
-        articleNumber: 2,
+		articleNumber: 2,
 		description:
 			"Before switching careers, I was already using coding to solve problems in my day job. Here are a few ways that early dev knowledge made an impact — and confirmed I was on the right path.",
 		keywords: [
@@ -223,10 +229,10 @@ function article_2() {
 			<React.Fragment>
 				<div className="article-content">
 					<p>
-						During the last couple of years working at UNSW, I
-						found myself reaching for code more and more — not
-						because it was in my job description, but because it
-						just made things easier.
+						During the last couple of years working at UNSW, I found
+						myself reaching for code more and more — not because it
+						was in my job description, but because it just made
+						things easier.
 					</p>
 					<p>
 						Before I ever had “developer” in my title, I was already
@@ -237,11 +243,18 @@ function article_2() {
 					</p>
 					<p>
 						<b>
-							1. Writing SQL reports to investigate data inconsistencies within our integration
+							1. Writing SQL reports to investigate data
+							inconsistencies within our integration
 						</b>
 						<br />
-						Using Oracle SQL, I frequently built reports that helped identify
-						inconsistencies between the data generated in our Student Information System (SIS) and the data displayed in our new system. These inconsistencies highlighted an issue with our data not being ingested via the APIs provided by the vendor and allowed us to provide ample examples so that the vendor could investigate and deliver a fix for us.
+						Using Oracle SQL, I frequently built reports that helped
+						identify inconsistencies between the data generated in
+						our Student Information System (SIS) and the data
+						displayed in our new system. These inconsistencies
+						highlighted an issue with our data not being ingested
+						via the APIs provided by the vendor and allowed us to
+						provide ample examples so that the vendor could
+						investigate and deliver a fix for us.
 					</p>
 					<p>
 						<b>
@@ -249,13 +262,16 @@ function article_2() {
 							bulk editing
 						</b>
 						<br />
-						We were using Jira to track the manual build of our program rule structures in our new progression checker/study planner system. As manager of the team, I was regularly needing to bulk edit issues in Jira,
-						which required pasting long lists of issue keys — but
-						they had to be wrapped in quotes and comma-separated.
-						Instead of doing that manually (and messing it up half
-						the time), I made a little webpage where you paste a
-						list and it instantly formats it. It was simple, but
-						saved me vast amounts of time.
+						We were using Jira to track the manual build of our
+						program rule structures in our new progression
+						checker/study planner system. As manager of the team, I
+						was regularly needing to bulk edit issues in Jira, which
+						required pasting long lists of issue keys — but they had
+						to be wrapped in quotes and comma-separated. Instead of
+						doing that manually (and messing it up half the time), I
+						made a little webpage where you paste a list and it
+						instantly formats it. It was simple, but saved me vast
+						amounts of time.
 					</p>
 					<p>
 						<b>
@@ -263,13 +279,14 @@ function article_2() {
 							student data during live demos
 						</b>
 						<br />
-						When we were demoing our new progression checker/study planner system to external
-						stakeholders or public audiences, we needed to show real
-						functionality — without exposing real student data. I
-						wrote some JavaScript that plugged into a browser
-						extension to blank out names, IDs, and other identifiers
-						on the fly. It let us give confident, secure demos
-						without relying on test environments.
+						When we were demoing our new progression checker/study
+						planner system to external stakeholders or public
+						audiences, we needed to show real functionality —
+						without exposing real student data. I wrote some
+						JavaScript that plugged into a browser extension to
+						blank out names, IDs, and other identifiers on the fly.
+						It let us give confident, secure demos without relying
+						on test environments.
 					</p>
 					<p>
 						None of these were full-scale applications. They were
@@ -296,7 +313,7 @@ function article_3() {
 		date: new Date("2025-04-20"),
 		title: "What I'm bringing with me switching to frontend dev",
 		published: true,
-        articleNumber: 3,
+		articleNumber: 3,
 		description:
 			"As I wrap up a long-term role in university systems, I've been reflecting on the skills I'm carrying with me into frontend development — from problem-solving to working with constraints and collaborating across teams.",
 		keywords: [
@@ -419,10 +436,11 @@ function article_3() {
 					<p>
 						<b>Looking ahead</b>
 						<br />
-						With the new product fully rolled out, and the project winding down, the timing finally feels right.
-						I've been building up my frontend skills, working on
-						projects I'm proud of, and I'm excited to shift gears
-						into a role where I can do that every day.
+						With the new product fully rolled out, and the project
+						winding down, the timing finally feels right. I've been
+						building up my frontend skills, working on projects I'm
+						proud of, and I'm excited to shift gears into a role
+						where I can do that every day.
 						<br />
 						<br />
 						The transition is already underway — and I'm looking
@@ -440,7 +458,7 @@ function article_4() {
 		date: new Date("2025-05-04"),
 		title: "Getting comfortable with CSS (eventually)",
 		published: true,
-        articleNumber: 4,
+		articleNumber: 4,
 		description:
 			"Of all the parts of frontend development, CSS has taken me the longest to feel confident in. Here's what made it so tricky — and how slow, steady practice helped it start to make sense.",
 		keywords: [
@@ -463,8 +481,8 @@ function article_4() {
 					<p>
 						If there's one part of frontend development that's taken
 						me the longest to feel confident in, it's CSS.
-					</p>
-					<p>
+						<br />
+						<br />
 						I remember early on, I could build out the logic of a
 						React app just fine — state, props, conditionals, no
 						problem. But then I'd try to lay it out nicely and
@@ -472,11 +490,11 @@ function article_4() {
 						behave, things wouldn't align, text would overflow
 						weirdly. The layout I had in my head rarely made it to
 						the screen.
+						<br />
+						<br />
+						At times, it felt like magic - mysterious and beyond the
+						understanding of mere mortals such as myself.
 					</p>
-					<p>
-						At times, it felt like magic — and not the good kind.
-					</p>
-
 					<p>
 						<b>Why CSS felt tricky</b>
 						<br />
@@ -501,7 +519,8 @@ function article_4() {
 						<br />
 						The truth is, there wasn't one moment where it suddenly
 						clicked. It didn't “fall into place” with a single
-						project the way JavaScript sometimes does.
+						problem to solve the way JavaScript sometimes feels like
+						it does.
 						<br />
 						<br />
 						Instead, I just kept at it. Little by little.
@@ -565,8 +584,8 @@ function article_5() {
 	return {
 		date: new Date("2025-05-18"),
 		title: "Building my portfolio: how I structured it and why",
-		published: false,
-        articleNumber: 5,
+		published: true,
+		articleNumber: 5,
 		description:
 			"I wanted a portfolio site that felt clean, personal, and easy to update. Here's how I built it using a GitHub template, custom styling, and dynamic project loading via the GitHub API.",
 		keywords: [
@@ -627,7 +646,7 @@ function article_5() {
 						<b>How I built it</b>
 						<br />
 						To save time — and to show that I could work with and
-						adapt existing code — I started with a great open-source
+						adapt existing code — I started with a nice little open-source
 						React template I found on GitHub: <br />
 						👉{" "}
 						<a
@@ -744,7 +763,7 @@ function article_6() {
 		date: new Date("2025-06-01"),
 		title: "That one time an Excel workflow turned into a web app",
 		published: false,
-        articleNumber: 6,
+		articleNumber: 6,
 		description:
 			"A simple web tool I built to replace an Excel formula taught me more than I expected about React, problem-solving, and real-world usefulness.",
 		keywords: [
@@ -849,7 +868,7 @@ function article_7() {
 		date: new Date("2025-06-15"),
 		title: "How I keep track of what I learn (without drowning in bookmarks)",
 		published: false,
-        articleNumber: 7,
+		articleNumber: 7,
 		description:
 			"When you're learning constantly, it's easy to forget as much as you absorb. Here's my lightweight system for logging what I learn — especially when watching YouTube on the go.",
 		keywords: [

@@ -24,6 +24,12 @@
 	border-radius: 40px;
 }
 
+.navbar ul, .navbar ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .nav-list {
 	display: flex;
 	justify-content: center;
