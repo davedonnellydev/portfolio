@@ -134,7 +134,7 @@ const Homepage = () => {
 								</div>
 							</div>
 
-							<aside className="homepage-first-area-right-side">
+							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
@@ -144,7 +144,7 @@ const Homepage = () => {
 										/>
 									</div>
 								</div>
-							</aside>
+							</div>
 						</section>
 
 						<section className="homepage-projects">
@@ -185,9 +185,9 @@ const Homepage = () => {
 								</div>
 							</div>
 
-							<aside className="homepage-works">
+							<div className="homepage-works">
 								<Works />
-							</aside>
+							</div>
 						</section>
 						<section className="homepage-socials">
 							<a
