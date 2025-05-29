@@ -36,14 +36,14 @@ const Projects = () => {
 
 			<div className="page-content">
 				<NavBar active="projects" />
-				<div className="content-wrapper">
+				<main className="content-wrapper">
 					<div className="projects-logo-container">
 						<div className="projects-logo">
 							<Logo width={46} />
 						</div>
 					</div>
 					<div className="projects-container">
-						<div className="title projects-title">Projects</div>
+						<h1 className="title projects-title">Projects</h1>
 						<div className="subtitle projects-subtitle">
 							<p>
 								Below is a look at some of the things I've been
@@ -57,28 +57,40 @@ const Projects = () => {
 								learning - and each one taught me something new.
 								More in the works!
 							</p>
-							<p>
-								<a href="#personal-projects">Personal Projects</a>
-							</p>
-							<p>
-								<a href="#general-assembly-projects">
-									General Assembly's Software Engineering
-									Immersive
-								</a>
-							</p>
-							<p>
-								<a href="#scrimba-projects">
-									Scrimba's Frontend Developer Career Path
-								</a>
-							</p>
+							<ul className="projects-list">
+								<li>
+									<a href="#personal-projects">
+										Personal Projects
+									</a>
+								</li>
+								<li>
+									<a href="#general-assembly-projects">
+										General Assembly's Software Engineering
+										Immersive
+									</a>
+								</li>
+								<li>
+									<a href="#scrimba-projects">
+										Scrimba's Frontend Developer Career Path
+									</a>
+								</li>
+							</ul>
 						</div>
-						<div className="projects-section" id="personal-projects">
-							<h2 className="secondary-title">Personal projects</h2>
+						<section
+							className="projects-section"
+							id="personal-projects"
+						>
+							<h2 className="secondary-title">
+								Personal projects
+							</h2>
 							<div className="projects-list">
 								<AllProjects />
 							</div>
-						</div>
-						<div className="projects-section" id="scrimba-projects">
+						</section>
+						<section
+							className="projects-section"
+							id="scrimba-projects"
+						>
 							<h2 className="secondary-title">
 								Scrimba's Frontend Developer Career Path
 							</h2>
@@ -116,8 +128,8 @@ const Projects = () => {
 							<div className="projects-list">
 								<AllScrimba />
 							</div>
-						</div>
-                        <div
+						</section>
+						<section
 							className="projects-section"
 							id="general-assembly-projects"
 						>
@@ -168,12 +180,10 @@ const Projects = () => {
 							<div className="projects-list">
 								<AllGeneralAssembly />
 							</div>
-						</div>
+						</section>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
-				</div>
+				</main>
+				<Footer />
 			</div>
 		</React.Fragment>
 	);

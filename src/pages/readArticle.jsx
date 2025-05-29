@@ -22,9 +22,11 @@ const ReadArticle = () => {
 	const navigate = useNavigate();
 	let { slug } = useParams();
 
-    const today = new Date();
+	const today = new Date();
 
-    const visibleArticles = myArticles.filter(article => article().date <= today && article().published === true);
+	const visibleArticles = myArticles.filter(
+		(article) => article().date <= today && article().published === true
+	);
 
 	const articleArray = visibleArticles.filter(
 		(article) => article().articleNumber.toString() === slug
@@ -35,73 +37,71 @@ const ReadArticle = () => {
 		window.scrollTo(0, 0);
 	}, [article]);
 
-    if (article === undefined) {
-        return (<Notfound />);
-    }
+	if (article === undefined) {
+		return <Notfound />;
+	}
 
 	ArticleStyle = styled.div`
 		${article().style}
 	`;
 
-        return (
-            <React.Fragment>
-                <Helmet>
-                    <title>{`${article().title} | ${INFO.main.title}`}</title>
-                    <meta name="description" content={article().description} />
-                    <meta name="keywords" content={article().keywords.join(", ")} />
-                </Helmet>
+	return (
+		<React.Fragment>
+			<Helmet>
+				<title>{`${article().title} | ${INFO.main.title}`}</title>
+				<meta name="description" content={article().description} />
+				<meta name="keywords" content={article().keywords.join(", ")} />
+			</Helmet>
 
-                <div className="page-content">
-                    <NavBar />
+			<div className="page-content">
+				<NavBar />
 
-                    <div className="content-wrapper">
-                        <div className="read-article-logo-container">
-                            <div className="read-article-logo">
-                                <Logo width={46} />
-                            </div>
-                        </div>
+				<main className="content-wrapper">
+					<div className="read-article-logo-container">
+						<div className="read-article-logo">
+							<Logo width={46} />
+						</div>
+					</div>
 
-                        <div className="read-article-container">
-                            <div className="read-article-back">
-                                <FontAwesomeIcon
-                                    icon={faCircleArrowLeft}
-                                    size="2xl"
-                                    alt="back"
-                                    className="read-article-back-button"
-                                    onClick={() => navigate(-1)}
-                                />
-                            </div>
+					<div className="read-article-container">
+						<div className="read-article-back">
+							<FontAwesomeIcon
+								icon={faCircleArrowLeft}
+								size="2xl"
+								alt="back"
+								className="read-article-back-button"
+								onClick={() => navigate(-1)}
+							/>
+						</div>
 
-                            <div className="read-article-wrapper">
-                                <div className="read-article-date-container">
-                                    <div className="read-article-date">
-                                        {article().date.toLocaleDateString(
-                                            "en-AU",
-                                            {
-                                                year: "numeric",
-                                                month: "long",
-                                                day: "numeric",
-                                            }
-                                        )}
-                                    </div>
-                                </div>
+						<div className="read-article-wrapper">
+							<div className="read-article-date-container">
+								<div className="read-article-date">
+									{article().date.toLocaleDateString(
+										"en-AU",
+										{
+											year: "numeric",
+											month: "long",
+											day: "numeric",
+										}
+									)}
+								</div>
+							</div>
 
-                                <div className="title read-article-title">
-                                    {article().title}
-                                </div>
+							<h1 className="title read-article-title">
+								{article().title}
+							</h1>
 
-                                <div className="read-article-body">
-                                    <ArticleStyle>{article().body}</ArticleStyle>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="page-footer">
-                            <Footer />
-                        </div>
-                    </div>
-                </div>
-            </React.Fragment>
-        );
+							<div className="read-article-body">
+								<ArticleStyle>{article().body}</ArticleStyle>
+							</div>
+						</div>
+					</div>
+				</main>
+				<Footer />
+			</div>
+		</React.Fragment>
+	);
 };
 
 export default ReadArticle;

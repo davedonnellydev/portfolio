@@ -20,8 +20,8 @@ const NavBar = (props) => {
 
 	return (
 		<React.Fragment>
-			<div className="nav-container">
-				<nav className="navbar">
+			<nav className="nav-container">
+				<div className="navbar">
 					<ul className="nav-list">
 						<li
 							className={
@@ -81,13 +81,13 @@ const NavBar = (props) => {
 							</a>
 						</li>
 					</ul>
-				</nav>
-				<div class="menu-icon" onClick={toggleMenu}>
-					<FontAwesomeIcon icon={faBars} />
 				</div>
-				<div class="menu-close" onClick={toggleMenu}>
-					<FontAwesomeIcon icon={faXmark} />
-				</div>
+			</nav>
+			<div className="menu-icon" onClick={toggleMenu}>
+				<FontAwesomeIcon icon={faBars} />
+			</div>
+			<div className="menu-close" onClick={toggleMenu}>
+				<FontAwesomeIcon icon={faXmark} />
 			</div>
 
 			<style jsx>{`

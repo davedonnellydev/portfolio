@@ -31,7 +31,7 @@ const Contact = () => {
 
 			<div className="page-content">
 				<NavBar active="contact" />
-				<div className="content-wrapper">
+				<main className="content-wrapper">
 					<div className="contact-logo-container">
 						<div className="contact-logo">
 							<Logo width={46} />
@@ -39,7 +39,7 @@ const Contact = () => {
 					</div>
 
 					<div className="contact-container">
-						<div className="title contact-title">Contact</div>
+						<h1 className="title contact-title">Contact</h1>
 
 						<div className="subtitle contact-subtitle">
 							<p>
@@ -60,11 +60,8 @@ const Contact = () => {
 							<Socials />
 						</div>
 					</div>
-
-					<div className="page-footer">
-						<Footer />
-					</div>
-				</div>
+				</main>
+				<Footer />
 			</div>
 		</React.Fragment>
 	);

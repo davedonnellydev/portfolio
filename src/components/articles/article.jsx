@@ -17,7 +17,7 @@ const Article = (props) => {
 
 				<Link to={link}>
 					<div className="article-right-side">
-						<div className="article-title">{title}</div>
+						<h2 className="article-title">{title}</h2>
 						<div className="article-description">{description}</div>
 						<div className="article-link">
 							Read Article{" "}

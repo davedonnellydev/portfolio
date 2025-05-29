@@ -43,7 +43,7 @@
 	z-index: 1;
 }
 
-.content-wrapper {
+.content-wrapper, footer {
 	max-width: 1000px;
 	margin: 0 auto;
 }

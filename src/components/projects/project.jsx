@@ -16,7 +16,7 @@ const Project = (props) => {
 						<div className="project-logo">
 							<img src={logo} alt="logo" />
 						</div>
-						<div className="project-title">{title}</div>
+						<h3 className="project-title">{title}</h3>
 						<div className="project-date">{`Created: ${createdDate.toLocaleDateString(
 							"en-AU",
 							{

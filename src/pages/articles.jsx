@@ -19,9 +19,13 @@ const Articles = () => {
 
 	const currentSEO = SEO.find((item) => item.page === "articles");
 
-    const today = new Date();
+	const today = new Date();
 
-    const visibleArticles = myArticles.filter(article => article().date <= today && article().published === true).reverse();
+	const visibleArticles = myArticles
+		.filter(
+			(article) => article().date <= today && article().published === true
+		)
+		.reverse();
 
 	return (
 		<React.Fragment>
@@ -36,7 +40,7 @@ const Articles = () => {
 
 			<div className="page-content">
 				<NavBar active="articles" />
-				<div className="content-wrapper">
+				<main className="content-wrapper">
 					<div className="articles-logo-container">
 						<div className="articles-logo">
 							<Logo width={46} />
@@ -44,7 +48,7 @@ const Articles = () => {
 					</div>
 
 					<div className="articles-main-container">
-						<div className="title articles-title">Blog</div>
+						<h1 className="title articles-title">Blog</h1>
 
 						<div className="subtitle articles-subtitle">
 							<p>
@@ -60,35 +64,32 @@ const Articles = () => {
 
 						<div className="articles-container">
 							<div className="articles-wrapper">
-								{visibleArticles.map((article, key) =>
-                                    <div
-											className="articles-article"
-											key={key}
-										>
-											<Article
-												key={article().articleNumber.toString()}
-												date={article().date.toLocaleDateString(
-													"en-AU",
-													{
-														year: "numeric",
-														month: "long",
-														day: "numeric",
-													}
-												)}
-												title={article().title}
-												description={
-													article().description
+								{visibleArticles.map((article, key) => (
+									<div className="articles-article" key={key}>
+										<Article
+											key={article().articleNumber.toString()}
+											date={article().date.toLocaleDateString(
+												"en-AU",
+												{
+													year: "numeric",
+													month: "long",
+													day: "numeric",
 												}
-												link={"/article/" + article().articleNumber}
-											/>
-										</div>)}
+											)}
+											title={article().title}
+											description={article().description}
+											link={
+												"/article/" +
+												article().articleNumber
+											}
+										/>
+									</div>
+								))}
 							</div>
 						</div>
 					</div>
-					<div className="page-footer">
-						<Footer />
-					</div>
-				</div>
+				</main>
+				<Footer />
 			</div>
 		</React.Fragment>
 	);

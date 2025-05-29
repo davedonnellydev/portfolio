@@ -1,5 +1,9 @@
 @import "../../../data/styles.css";
 
+h2.article-title {
+    margin: 0;
+}
+
 .article {
 	display: flex;
 }

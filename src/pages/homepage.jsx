@@ -104,7 +104,7 @@ const Homepage = () => {
 
 			<div className="page-content">
 				<NavBar active="home" />
-				<div className="content-wrapper">
+				<main className="content-wrapper">
 					<div className="homepage-logo-container">
 						<div style={logoStyle}>
 							<Logo width={logoSize} link={false} />
@@ -112,15 +112,12 @@ const Homepage = () => {
 					</div>
 
 					<div className="homepage-container">
-						<div className="homepage-first-area">
+						<section className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">
-									<span>Dave Donnelly:</span>
-								</div>
-
-								<div className="title homepage-title">
-									<span>frontend web developer</span>
-								</div>
+								<h1>
+									<span className="title homepage-title">Dave Donnelly:<br /></span>
+									<span className="title homepage-title">frontend web developer</span>
+								</h1>
 
 								<div className="subtitle homepage-subtitle">
 									<span>
@@ -128,16 +125,16 @@ const Homepage = () => {
 										based in Sydney. After years working in
 										the university sector, mainly in systems
 										and project teams, I've made the switch
-										to building things on the web. I aspire to be the kind of dev
-										that writes clean code, designs
-										intuitive apps, and solves real problems
-										with smart, simple solutions. Connect
-										with me below!
+										to building things on the web. I aspire
+										to be the kind of dev that writes clean
+										code, designs intuitive apps, and solves
+										real problems with smart, simple
+										solutions. Connect with me below!
 									</span>
 								</div>
 							</div>
 
-							<div className="homepage-first-area-right-side">
+							<aside className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
@@ -147,18 +144,20 @@ const Homepage = () => {
 										/>
 									</div>
 								</div>
-							</div>
-						</div>
+							</aside>
+						</section>
 
-						<div className="homepage-projects">
-                            <h2 className="secondary-title">Personal projects</h2>
+						<section className="homepage-projects">
+							<h2 className="secondary-title">
+								Personal projects
+							</h2>
 							<AllProjects />
-                            <div className="all-projects-link homepage-article-link">
-									<a href="/projects">More projects...</a>
-								</div>
-						</div>
+							<div className="all-projects-link homepage-article-link">
+								<a href="/projects">More projects...</a>
+							</div>
+						</section>
 
-						<div className="homepage-after-title">
+						<section className="homepage-after-title">
 							<div className="homepage-articles">
 								{recentPublishedArticles.map((article, key) => (
 									<div className="homepage-article" key={key}>
@@ -186,11 +185,11 @@ const Homepage = () => {
 								</div>
 							</div>
 
-							<div className="homepage-works">
+							<aside className="homepage-works">
 								<Works />
-							</div>
-						</div>
-                        <div className="homepage-socials">
+							</aside>
+						</section>
+						<section className="homepage-socials">
 							<a
 								href={INFO.socials.bluesky}
 								target="_blank"
@@ -246,15 +245,10 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
-						</div>
-
-
-
-						<div className="page-footer">
-							<Footer />
-						</div>
+						</section>
 					</div>
-				</div>
+				</main>
+				<Footer />
 			</div>
 		</React.Fragment>
 	);
