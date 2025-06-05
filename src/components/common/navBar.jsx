@@ -70,7 +70,7 @@ const NavBar = (props) => {
 						</li>
 						<li className="download-icon nav-item">
 							<a
-								href="DDONNELLY CV 2025.pdf"
+								href="DDONNELLY CV JUN 25.pdf"
 								target="_blank"
 								rel="noopener noreferrer"
 								title="Download CV"

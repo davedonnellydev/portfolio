@@ -115,21 +115,27 @@ const Homepage = () => {
 						<section className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
 								<h1>
-									<span className="title homepage-title">Dave Donnelly:<br /></span>
-									<span className="title homepage-title">frontend web developer</span>
+									<span className="title homepage-title">
+										Dave Donnelly:
+										<br />
+									</span>
+									<span className="title homepage-title">
+										front-end developer
+									</span>
 								</h1>
 
 								<div className="subtitle homepage-subtitle">
 									<span>
-										Hey, I'm Dave — a frontend web developer
-										based in Sydney. After years working in
-										the university sector, mainly in systems
-										and project teams, I've made the switch
-										to building things on the web. I aspire
-										to be the kind of dev that writes clean
-										code, designs intuitive apps, and solves
-										real problems with smart, simple
-										solutions. Connect with me below!
+										Hey, I'm Dave — a front-end web
+										developer based in Sydney. After years
+										working in the university sector, mainly
+										in systems and project teams, I've made
+										the switch to building things on the
+										web. I aspire to be the kind of dev that
+										writes clean code, designs intuitive
+										apps, and solves real problems with
+										smart, simple solutions. Connect with me
+										below!
 									</span>
 								</div>
 							</div>

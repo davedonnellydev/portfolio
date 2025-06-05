@@ -45,7 +45,7 @@ const About = () => {
 
 								<div className="subtitle about-subtitle">
 									<p>
-										Hi! I'm Dave, a frontend developer who
+										Hi! I'm Dave, a front-end developer who
 										has taken a bit of a non-traditional
 										route into tech. For over 15 years, I
 										worked in higher education — handling

@@ -61,10 +61,10 @@ function article_1() {
 		published: true,
 		articleNumber: 1,
 		description:
-			"My path into frontend development hasn't been linear — and that's okay. I write a bit about why I didn't switch careers right after studying, and what I gained by waiting until I felt the time was right.",
+			"My path into front-end development hasn't been linear — and that's okay. I write a bit about why I didn't switch careers right after studying, and what I gained by waiting until I felt the time was right.",
 		keywords: [
 			"Career switch",
-			"Frontend developer journey",
+			"Front-end developer journey",
 			"General Assembly grad",
 			"Career transition",
 			"Dave Donnelly",
@@ -73,7 +73,7 @@ function article_1() {
                 .article-content {
 					display: flex;
 					flex-direction: column;
-					align-items: center;
+					align-items: flex-start;
 				}
 		`,
 		body: (
@@ -137,7 +137,7 @@ function article_1() {
 						tweaking code, writing SQL, improving how we presented
 						data to end users. The student information system we
 						used (SITS:Vision, by Tribal) had a purpose-built
-						programming language for custom-building frontend
+						programming language for custom-building front-end
 						pages/applications to help manage the backend records.
 						While it wasn't always directly using
 						HTML/CSS/JavaScript, I remember getting hooked on that
@@ -185,7 +185,7 @@ function article_1() {
 						<br />
 						With the rollout nearly complete and my team shifting
 						into BAU, it finally feels like the right time to make
-						the leap. I've built up my frontend skills, I'm
+						the leap. I've built up my front-end skills, I'm
 						continually working on my portfolio of projects, and I'm
 						ready to bring both my coding abilities and my years of
 						system and stakeholder experience to a full-time
@@ -222,7 +222,7 @@ function article_2() {
                 .article-content {
 					display: flex;
 					flex-direction: column;
-					align-items: center;
+					align-items: flex-start;
 				}
 		`,
 		body: (
@@ -311,24 +311,24 @@ function article_2() {
 function article_3() {
 	return {
 		date: new Date("2025-04-20"),
-		title: "What I'm bringing with me switching to frontend dev",
+		title: "What I'm bringing with me switching to front-end dev",
 		published: true,
 		articleNumber: 3,
 		description:
-			"As I wrap up a long-term role in university systems, I've been reflecting on the skills I'm carrying with me into frontend development — from problem-solving to working with constraints and collaborating across teams.",
+			"As I wrap up a long-term role in university systems, I've been reflecting on the skills I'm carrying with me into front-end development — from problem-solving to working with constraints and collaborating across teams.",
 		keywords: [
-			"Career switch to frontend",
+			"Career switch to front-end",
 			"Transferable skills",
 			"From higher ed to dev",
 			"Dave Donnelly",
 			"UNSW projects",
-			"Frontend mindset",
+			"Front-end mindset",
 		],
 		style: `
                 .article-content {
 					display: flex;
 					flex-direction: column;
-					align-items: center;
+					align-items: flex-start;
 				}
 		`,
 		body: (
@@ -341,7 +341,7 @@ function article_3() {
 						challenges along the way. It's been a rewarding role,
 						but now that the project is nearly complete and my time
 						there is winding down, I'm finally making the move I've
-						been preparing for: transitioning into frontend
+						been preparing for: transitioning into front-end
 						development full-time.
 					</p>
 					<p>
@@ -363,7 +363,7 @@ function article_3() {
 						about improving how people interact with systems.
 						<br />
 						<br />
-						That same mindset is at the heart of frontend
+						That same mindset is at the heart of front-end
 						development: understanding what the user needs, working
 						through edge cases, and building something that's both
 						functional and clear.
@@ -380,7 +380,7 @@ function article_3() {
 						deliver value.
 						<br />
 						<br />
-						From what I've already seen in frontend projects, that
+						From what I've already seen in front-end projects, that
 						experience translates well — especially when working
 						with design systems, third-party APIs, or complex UI
 						requirements.
@@ -396,7 +396,7 @@ function article_3() {
 						translated business needs into actionable features.
 						<br />
 						<br />
-						Frontend developers sit at that same intersection —
+						Front-end developers sit at that same intersection —
 						bridging user needs and technical implementation. I'm
 						comfortable in that space and genuinely enjoy working
 						across disciplines to bring ideas to life.
@@ -412,7 +412,7 @@ function article_3() {
 						and code that others can follow.
 						<br />
 						<br />
-						Now, as I write more frontend code, that mindset sticks
+						Now, as I write more front-end code, that mindset sticks
 						— writing clean, reusable components and documenting my
 						thinking along the way.
 					</p>
@@ -438,7 +438,7 @@ function article_3() {
 						<br />
 						With the new product fully rolled out, and the project
 						winding down, the timing finally feels right. I've been
-						building up my frontend skills, working on projects I'm
+						building up my front-end skills, working on projects I'm
 						proud of, and I'm excited to shift gears into a role
 						where I can do that every day.
 						<br />
@@ -460,27 +460,27 @@ function article_4() {
 		published: true,
 		articleNumber: 4,
 		description:
-			"Of all the parts of frontend development, CSS has taken me the longest to feel confident in. Here's what made it so tricky — and how slow, steady practice helped it start to make sense.",
+			"Of all the parts of front-end development, CSS has taken me the longest to feel confident in. Here's what made it so tricky — and how slow, steady practice helped it start to make sense.",
 		keywords: [
 			"CSS learning journey",
-			"Frontend layout struggles",
+			"Front-end layout struggles",
 			"Flexbox and Grid",
 			"Dave Donnelly",
-			"Learning frontend dev",
+			"Learning front-end dev",
 		],
 		style: `
                 .article-content {
 					display: flex;
 					flex-direction: column;
-					align-items: center;
+					align-items: flex-start;
 				}
 		`,
 		body: (
 			<React.Fragment>
 				<div className="article-content">
 					<p>
-						If there's one part of frontend development that's taken
-						me the longest to feel confident in, it's CSS.
+						If there's one part of front-end development that's
+						taken me the longest to feel confident in, it's CSS.
 						<br />
 						<br />
 						I remember early on, I could build out the logic of a
@@ -590,7 +590,7 @@ function article_5() {
 			"I wanted a portfolio site that felt clean, personal, and easy to update. Here's how I built it using a GitHub template, custom styling, and dynamic project loading via the GitHub API.",
 		keywords: [
 			"Portfolio website",
-			"Frontend developer portfolio",
+			"Front-end developer portfolio",
 			"Reactfolio",
 			"GitHub API integration",
 			"Dave Donnelly",
@@ -600,7 +600,7 @@ function article_5() {
                 .article-content {
 					display: flex;
 					flex-direction: column;
-					align-items: center;
+					align-items: flex-start;
 				}
 		`,
 		body: (
@@ -646,8 +646,8 @@ function article_5() {
 						<b>How I built it</b>
 						<br />
 						To save time — and to show that I could work with and
-						adapt existing code — I started with a nice little open-source
-						React template I found on GitHub: <br />
+						adapt existing code — I started with a nice little
+						open-source React template I found on GitHub: <br />
 						👉{" "}
 						<a
 							href="https://github.com/truethari/reactfolio"
@@ -762,13 +762,13 @@ function article_6() {
 	return {
 		date: new Date("2025-06-01"),
 		title: "That one time an Excel workflow turned into a web app",
-		published: false,
+		published: true,
 		articleNumber: 6,
 		description:
-			"A simple web tool I built to replace an Excel formula taught me more than I expected about React, problem-solving, and real-world usefulness.",
+			"A simple web tool I built to replace an Excel formula taught me more than I expected about JavaScript, problem-solving, and real-world usefulness.",
 		keywords: [
 			"Excel to web app",
-			"React project",
+			"JavaScript project",
 			"Real world coding",
 			"Workflow automation",
 			"Dave Donnelly",
@@ -777,12 +777,12 @@ function article_6() {
                 .article-content {
 					display: flex;
 					flex-direction: column;
-					align-items: center;
+					align-items: flex-start;
 				}
 		`,
 		body: (
 			<React.Fragment>
-				<div className="article-content">
+				<article className="article-content">
 					<p>
 						In my previous role, Excel was the default tool for
 						everything — data analysis, reporting, formatting, even
@@ -790,18 +790,18 @@ function article_6() {
 						somewhere else. And while Excel is powerful, there were
 						a few repetitive tasks that had me thinking, “Surely
 						there's a better way to do this.”
-					</p>
-					<p>
+						<br />
+						<br />
 						So when I started learning web development, one of my
 						early experiments was turning one of those small Excel
 						workflows into a simple web app.
 					</p>
 
+					<h2>The problem</h2>
 					<p>
-						<b>The problem</b>
-						<br />I needed to reformat a list of Jira issue keys to
-						paste into a bulk update window — specifically, wrapping
-						each issue key in quotes and separating them by commas.
+						I needed to reformat a list of Jira issue keys to paste
+						into a bulk update window — specifically, wrapping each
+						issue key in quotes and separating them by commas.
 						Think:
 						<pre>
 							PCSPPA-123{"\n"}
@@ -816,9 +816,9 @@ function article_6() {
 						in the first place.
 					</p>
 
+					<h2>The solution</h2>
 					<p>
-						<b>The solution</b>
-						<br />I built a tiny web tool in React that let me paste
+						I built a tiny web tool in JavaScript that let me paste
 						a list of issue keys into a textarea and instantly
 						returned the formatted result. It even auto-copied the
 						output to the clipboard. No dependencies, no backend,
@@ -826,20 +826,23 @@ function article_6() {
 						really well.
 					</p>
 
+					<h2>What I learned</h2>
 					<p>
-						<b>What I learned</b>
-						<br />
 						<ul>
 							<li>
-								I got practice using React state and string
-								manipulation
+								I got practice thinking through the logic used
+								to handle arrays and text in JS functions
 							</li>
 							<li>
 								I learned how to handle user input and display
 								dynamic output
 							</li>
 							<li>
-								I experienced firsthand how frontend tools can
+								I had to think through all the edge cases that
+								come with allowing free text input
+							</li>
+							<li>
+								I experienced firsthand how front-end tools can
 								replace (and improve) real-world workflows
 							</li>
 						</ul>
@@ -848,16 +851,25 @@ function article_6() {
 						easier — even for tasks that seem small.
 					</p>
 
+					<h2>The takeaway</h2>
 					<p>
-						<b>The takeaway</b>
-						<br />
 						If you're learning to code, look for those little pain
 						points in your current workflow. Solving them might not
 						only save you time, but also give you a great portfolio
 						project — one with a real use case and a story behind
 						it.
+						<br />
+						If you want to check out the end result, visit{" "}
+						<a
+							href="https://davedonnellydev.github.io/concats/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							davedonnellydev.github.io/concats/
+						</a>
+						.
 					</p>
-				</div>
+				</article>
 			</React.Fragment>
 		),
 	};
@@ -872,7 +884,7 @@ function article_7() {
 		description:
 			"When you're learning constantly, it's easy to forget as much as you absorb. Here's my lightweight system for logging what I learn — especially when watching YouTube on the go.",
 		keywords: [
-			"Frontend learning",
+			"Front-end learning",
 			"Dev notes",
 			"Learning on YouTube",
 			"Dave Donnelly",
@@ -890,7 +902,7 @@ function article_7() {
 			<React.Fragment>
 				<div className="article-content">
 					<p>
-						Learning frontend development means constantly
+						Learning front-end development means constantly
 						discovering new things: cool tricks, better patterns,
 						ways to fix weird bugs you hope you never see again.
 					</p>

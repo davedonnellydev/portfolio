@@ -5,13 +5,13 @@
 	--secondary-color: #65656d;
 	--tertiary-color: #656577;
 	--quaternary-color: #e4e4e7;
-	--link-color: #DA2C38;
+	--link-color: #da2c38;
 	/* --link-color: #14b8a6; */
 
-    /* --background-color: #2b3659; */
-    --background-color: #fafafa;
+	/* --background-color: #2b3659; */
+	--background-color: #fafafa;
 
-    /* palette at https://coolors.co/da2c38-65656d-acacb4-e4e4e7-14b8a6 */
+	/* palette at https://coolors.co/da2c38-65656d-acacb4-e4e4e7-14b8a6 */
 
 	/* ---------------------- */
 
@@ -28,5 +28,5 @@
 } */
 
 code {
-    color: black;
+	color: black;
 }
