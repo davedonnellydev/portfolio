@@ -6,6 +6,7 @@ import {
 	faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import INFO from "../../data/user";
 
 import "./styles/navBar.css";
 
@@ -70,7 +71,7 @@ const NavBar = (props) => {
 						</li>
 						<li className="download-icon nav-item">
 							<a
-								href="DDONNELLY CV JUN 25.pdf"
+								href={INFO.main.cv}
 								target="_blank"
 								rel="noopener noreferrer"
 								title="Download CV"
